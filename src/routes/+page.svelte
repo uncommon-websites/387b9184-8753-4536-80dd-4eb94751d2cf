@@ -7,6 +7,14 @@
 	import AboutTeaser from "$lib/components/layout/AboutTeaser.svelte";
 	import LogoScroller from "$lib/components/layout/LogoScroller.svelte";
 	import CenteredTextOnlyHero from "$lib/components/layout/hero-sections/CenteredTextOnlyHero.svelte";
+
+	// Icons
+	import IconShield from "~icons/lucide/shield";
+	import IconKey from "~icons/lucide/key";
+	import IconLock from "~icons/lucide/lock";
+	import IconUsers from "~icons/lucide/users";
+	import IconHeadset from "~icons/lucide/headset";
+	import IconTrendingUp from "~icons/lucide/trending-up";
 </script>
 
 <CenteredTextOnlyHero
@@ -25,62 +33,97 @@
 />
 
 <Summary
-	generating
 	title="What we do"
-	text="Our technology delivers measurable results through secure, adaptable solutions that directly increase productivity and drive growth."
+	text="Casa provides multi-key vault technology for Bitcoin holders with significant wealth who need secure self-custody without the risk of exchange hacks or losing access. Our premium service secures billions in digital assets globally, offering the control of self-custody with the confidence of Swiss banking. From personalized onboarding to inheritance planning, we deliver complete protection for your life-changing wealth."
 />
 
 <Testimonials
-	generating
 	testimonials={[
 		{
-			name: "Jane Smith",
-			position: "CTO",
-			company: "Tech Innovations",
+			name: "Marcus Chen",
+			position: "Bitcoin Investor",
+			company: "Early Adopter Since 2015",
 			quote:
-				"Their cutting-edge automation boosted our productivity by 35%.\nThe intuitive interface reduced training time and improved team adoption.",
-			image: "https://www.unc.mn/image-placeholder.svg"
+				"After the exchange hacks in 2022, I moved $4.2M to Casa's multi-key vault. Setup took 90 minutes with their team, versus weeks trying to figure out self-custody alone. The peace of mind knowing my wealth is protected from both hackers and my own mistakes is invaluable.",
+			image: "/generated/image-professional-headshot-of-an-asian-male-b.webp"
 		},
 		{
-			name: "John Doe",
-			position: "Director of Operations",
-			company: "Global Solutions",
+			name: "Elena Ramirez",
+			position: "Family Office Manager",
+			company: "Ramirez Holdings",
 			quote:
-				"Their robust security protocols gave us confidence in handling sensitive data.\nThe 24/7 support team resolved issues within hours, not days.",
-			image: "https://www.unc.mn/image-placeholder.svg"
+				"Casa's inheritance planning saved us from a potential disaster. Our attorney estimated we avoided $800K in estate complications by properly structuring multi-generational access. The platform makes something incredibly complex feel simple and secure.",
+			image: "/generated/image-professional-headshot-of-a-hispanic-woma.webp"
 		},
 		{
-			name: "Sarah Johnson",
-			position: "Product Manager",
-			company: "Future Systems",
+			name: "Raj Patel",
+			position: "Technology Entrepreneur",
+			company: "Blockchain Ventures",
 			quote:
-				"The scalable platform grew seamlessly with our business needs.\nTheir customization options allowed us to tailor solutions perfectly to our workflows.",
-			image: "https://www.unc.mn/image-placeholder.svg"
+				"I'm technical enough to run my own node, but Casa's architecture is brilliant. Their multi-key vault eliminated single points of failure that kept me up at night. The premium support responds in minutes, not hours. Worth every penny for securing $2.8M.",
+			image: "/generated/image-professional-headshot-of-a-south-asian-m.webp"
 		}
 	]}
 />
 
 <Features
-	generating
-	title="Features"
-	subtitle="Some features"
+	title="Built for security and peace of mind"
+	subtitle="Our multi-key vault technology delivers the security Bitcoin investors need to protect life-changing wealth."
 	features={[
 		{
-			title: "Streamlined Workflows",
+			title: "Multi-key vault security",
 			description:
-				"Automate repetitive tasks and connect systems to improve productivity with our industry-leading 87% time savings."
+				"Advanced multi-key architecture protects your Bitcoin from hacks, theft, and single points of failure with distributed key management.",
+			icon: IconShield
 		},
 		{
-			title: "Data Analysis",
+			title: "Complete self-custody",
 			description:
-				"Extract meaningful insights from your data with powerful analytical tools backed by proprietary AI algorithms that are 3x more accurate than competitors."
+				"Take full control of your Bitcoin without intermediaries or exchanges, ensuring you always maintain sovereignty over your wealth.",
+			icon: IconKey
 		},
 		{
-			title: "Secure Collaboration",
+			title: "Protection from loss",
 			description:
-				"Work together seamlessly while maintaining strict data privacy standards with our zero-knowledge architecture and military-grade encryption."
+				"Our vault technology safeguards against accidental loss and theft while maintaining secure access for authorized users.",
+			icon: IconLock
+		},
+		{
+			title: "Inheritance planning",
+			description:
+				"Integrated tools for secure generational wealth transfer ensure your Bitcoin reaches your heirs according to your wishes.",
+			icon: IconUsers
+		},
+		{
+			title: "White-glove service",
+			description:
+				"Personalized onboarding and dedicated support provide a premium experience comparable to Swiss private banking.",
+			icon: IconHeadset
+		},
+		{
+			title: "Proven at scale",
+			description:
+				"Trusted by clients worldwide to secure billions in digital assets with a 4.9 App Store rating and years of proven security.",
+			icon: IconTrendingUp
 		}
 	]}
 />
-<AboutTeaser generating />
-<CallToAction generating />
+<AboutTeaser />
+<CallToAction 
+	title="Take control before someone else does"
+	subtitle="Secure your Bitcoin today—before risk becomes regret"
+	description="Your Bitcoin is only safe if you control it. Casa makes self-custody simple, secure, and stress-free—no technical expertise required. Our multi-key vaults eliminate single points of failure, and our expert team guides you every step of the way."
+	imageSrc="/generated/image-a-confident-professional-sits-at-a-moder.webp"
+	callsToAction={[
+		{
+			href: "/",
+			label: "Schedule free consultation",
+			variant: "primary"
+		},
+		{
+			href: "/about",
+			label: "Learn more",
+			variant: "secondary"
+		}
+	]}
+/>
