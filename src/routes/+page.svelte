@@ -6,16 +6,23 @@
 	import CallToAction from "$lib/components/layout/CallToAction.svelte";
 	import AboutTeaser from "$lib/components/layout/AboutTeaser.svelte";
 	import LogoScroller from "$lib/components/layout/LogoScroller.svelte";
-	import Hero from "$lib/components/layout/hero-sections/Hero.svelte";
+	import CenteredTextOnlyHero from "$lib/components/layout/hero-sections/CenteredTextOnlyHero.svelte";
 </script>
 
-<Hero
-	title="Elevate your business with thoughtful design"
-	subtitle="Solutions that enhance user experience, and improve visual communication."
-	imageSrc="https://www.unc.mn/image-placeholder.svg"
-	generating
+<CenteredTextOnlyHero
+	title="Complete control of your Bitcoin"
+	subtitle="Multi-key vault technology that eliminates exchange risk and protects your wealth from theft and loss."
+	imageSrc="/generated/image-a-minimalist-scene-featuring-a-group-of-.webp"
 />
-<LogoScroller label="" generating />
+<LogoScroller
+	label="Trusted by Bitcoin leaders"
+	logoUrls={[
+		'https://cdn.brandfetch.io/kraken.com/w/400/h/400/logo',
+		'https://cdn.brandfetch.io/microstrategy.com/w/400/h/400/logo',
+		'https://cdn.brandfetch.io/block.xyz/w/400/h/400/logo',
+		'https://cdn.brandfetch.io/coinbase.com/w/400/h/400/logo'
+	]}
+/>
 
 <Summary
 	generating
